@@ -133,6 +133,6 @@ dependencies {
     api "com.google.android.exoplayer:extension-mediasession:2.11.8"
     // Activity KTX for viewModels()
     implementation "androidx.activity:activity-ktx:1.1.0"
-
-
+    //biometric authentication
+    implementation "androidx.biometric:biometric:1.0.1"
 }

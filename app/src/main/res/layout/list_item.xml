@@ -33,6 +33,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="100 Songs"
+        android:layout_marginTop="@dimen/_4sdp"
         android:textSize="14sp"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
