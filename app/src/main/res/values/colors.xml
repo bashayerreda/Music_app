@@ -13,4 +13,14 @@
     <color name="mediumDarkBackground">#303030</color>
     <color name="darkBackground">#202020</color>
     <color name="lightBackground">#404040</color>
+
+    <!--custom colors !-->
+    <!--custom colors !-->
+    <color name="custom_color_primary">#673AB7</color>
+    <color name="custom_color_secondry">#FF8F00</color>
+    <color name="custom_color_secondry_light">#FFD180</color>
+    <color name="custom_color_bacground">#FFFFFF</color>
+    <color name="custom_color_text_primary">#000000</color>
+    <color name="custom_color_text_secondry">#9E9E9E</color>
+
 </resources>

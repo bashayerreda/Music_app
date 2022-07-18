@@ -1,8 +1,6 @@
-package com.example.clonespotify.ui
+package com.example.clonespotify.ui.fragments
 
 import android.os.Bundle
-import android.support.v4.media.session.PlaybackStateCompat
-import android.util.Log
 import android.view.View
 import android.widget.SeekBar
 import androidx.fragment.app.Fragment
@@ -11,14 +9,12 @@ import androidx.lifecycle.ViewModelProvider
 import com.bumptech.glide.RequestManager
 import com.example.clonespotify.R
 import com.example.clonespotify.entities.Song
-import com.example.clonespotify.expoplayer.MusicService
 import com.example.clonespotify.expoplayer.callbacks.isPlaying
 import com.example.clonespotify.expoplayer.toSong
 import com.example.clonespotify.others.Status
 import com.example.clonespotify.ui.viewmodels.MainViewModel
 import com.example.clonespotify.ui.viewmodels.SongViewModel
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.fragment_song.*
 import java.text.SimpleDateFormat
 import java.util.*

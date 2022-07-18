@@ -9,8 +9,10 @@ import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
 import androidx.viewpager2.widget.ViewPager2
 import com.bumptech.glide.RequestManager
+import com.example.clonespotify.OnBoardingItem
 import com.example.clonespotify.R
 import com.example.clonespotify.adapters.SwipeSongAdapter
+import com.example.clonespotify.adapters.onItemBoardingAdapters
 
 import com.example.clonespotify.entities.Song
 import com.example.clonespotify.expoplayer.callbacks.isPlaying
@@ -25,6 +27,7 @@ import javax.inject.Inject
 
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
+
 
     private val mainViewModel: MainViewModel by viewModels()
 
@@ -72,6 +75,7 @@ class MainActivity : AppCompatActivity() {
             when(destination.id) {
                 R.id.songFragment -> hideBottomBar()
                 R.id.homeFragment -> showBottomBar()
+                R.id.tipsFragment -> hideBottomBar()
                 else -> showBottomBar()
             }
         }
@@ -152,8 +156,8 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
-}
 
+}
 
 
 

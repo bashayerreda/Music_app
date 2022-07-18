@@ -3,20 +3,30 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_grap"
-    app:startDestination="@id/homeFragment">
-
+    app:startDestination="@id/tipsFragment">
+    <fragment
+        android:id="@+id/tipsFragment"
+        android:name="com.example.clonespotify.TipsFragment"
+        android:label="fragment_tips"
+        tools:layout="@layout/fragment_tips" >
+        <action
+            android:id="@+id/action_tipsFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.example.clonespotify.ui.HomeFragment"
+        android:name="com.example.clonespotify.ui.fragments.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
     <fragment
         android:id="@+id/songFragment"
-        android:name="com.example.clonespotify.ui.SongFragment"
+        android:name="com.example.clonespotify.ui.fragments.SongFragment"
         android:label="fragment_song"
         tools:layout="@layout/fragment_song" />
 
     <action android:id="@+id/globalActionFromMainActivityToSongFragment"
        app:destination="@id/songFragment"
         />
+
+
 </navigation>
